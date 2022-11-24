@@ -1,0 +1,13 @@
+.button {
+  border-radius: $radius-sm;
+  background-color: $color-primary;
+  cursor: pointer;
+  padding: 0.65rem 1.25rem;
+  color: $color-text-dark;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+  font-weight: 700;
+
+  @include slide-curtain-onhover;
+}

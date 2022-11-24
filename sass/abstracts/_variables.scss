@@ -1,0 +1,57 @@
+$GREY: hsl(245, 11%, 77%);
+$WHITE: hsl(255, 100%, 100%);
+
+$color-primary: hsl(156, 72%, 67%);
+$color-primary-lighter: tint($color-primary, 50%);
+$color-primary-darker: shade($color-primary, 70%);
+$color-primary-opaque: change-color($color-primary, $alpha: 0.1);
+$color-primary-opaque-2: change-color($color-primary, $alpha: 0.7);
+$color-primary-opaque-3: change-color($color-primary, $alpha: 0.05);
+
+$color-background: hsl(224, 64%, 10%);
+$color-background-lighter: tint($color-background, 5%);
+$color-background-opaque: change-color($color-background, $alpha: 0.9);
+
+$color-foreground: $WHITE;
+
+$color-text-primary: $color-foreground;
+$color-text-secondary: $GREY;
+$color-text-dark: $color-background;
+
+$shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+$shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+$shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+$shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 1rem;
+$radius-full: 50%;
+
+$border-1px: 1px solid tint($color-background, 25%);
+
+$font-size-sm: 0.875rem;
+$font-size-base: 1.125rem;
+$font-size-md: 1.25rem;
+$font-size-lg: 1.5rem;
+$font-size-smaller: 60%;
+
+$font-size-h1: 2.75rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.75rem;
+$font-size-h4: 1.5rem;
+$font-size-h5: 1.25rem;
+
+$transition-1: all 0.3s ease-in-out;
+$transition-2: all 1.5s ease;
+
+$bp-xs: 360;
+$bp-sm: 600;
+$bp-md: 900;
+$bp-lg: 1200;
+
+$section-max-width: 82rem;
+$section-inner-max-width: 60rem;
+$section-padding-block: 2.5rem 4rem;
+$section-padding-inline: 1.25rem;
+$heading-border-width: 12rem;

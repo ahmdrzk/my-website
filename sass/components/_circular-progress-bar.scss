@@ -1,0 +1,72 @@
+@mixin circular-progress-bar($percentage) {
+  @include center-content;
+  flex-direction: column;
+  gap: 1rem;
+  width: 18.5rem;
+  height: 12.5rem;
+  border: $border-1px;
+  border-radius: $radius-md;
+  background-color: $color-background-lighter;
+  transition: $transition-1;
+
+  & > div {
+    @include center-content;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: $radius-full;
+    background: conic-gradient($color-primary #{$percentage * 3.6}deg, $color-primary-darker 0);
+    padding: 0.6rem;
+    animation-name: opacity;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    transition: $transition-1;
+
+    & > div {
+      @include center-content;
+      width: 100%;
+      height: 100%;
+      border-radius: $radius-full;
+      background-color: $color-background-lighter;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+}
+
+.circular-progress-bar-50 {
+  @include circular-progress-bar(50);
+}
+.circular-progress-bar-55 {
+  @include circular-progress-bar(55);
+}
+.circular-progress-bar-60 {
+  @include circular-progress-bar(60);
+}
+.circular-progress-bar-65 {
+  @include circular-progress-bar(65);
+}
+.circular-progress-bar-70 {
+  @include circular-progress-bar(70);
+}
+.circular-progress-bar-75 {
+  @include circular-progress-bar(75);
+}
+.circular-progress-bar-80 {
+  @include circular-progress-bar(80);
+}
+.circular-progress-bar-85 {
+  @include circular-progress-bar(85);
+}
+.circular-progress-bar-90 {
+  @include circular-progress-bar(90);
+}
+.circular-progress-bar-95 {
+  @include circular-progress-bar(95);
+}
+.circular-progress-bar-100 {
+  @include circular-progress-bar(100);
+}

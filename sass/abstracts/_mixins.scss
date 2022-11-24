@@ -1,0 +1,146 @@
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-content {
+  max-width: $section-max-width;
+  margin-inline: auto;
+  padding-block: $section-padding-block;
+  padding-inline: $section-padding-inline;
+}
+
+@mixin increasing-border-onhover() {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 3.2px solid $color-primary;
+    transition: $transition-1;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:not(:hover)::before {
+    right: 0;
+    left: auto;
+  }
+}
+
+@mixin curtain($curtain-color, $slide-direction) {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: $radius-sm;
+    background-color: $curtain-color;
+    transition: $transition-1;
+
+    @if ($slide-direction == "left-to-right") {
+      width: 0;
+      height: 100%;
+    } @else if ($slide-direction == "top-to-bottom") {
+      width: 100%;
+      height: 0;
+    }
+  }
+}
+
+@mixin below-curtain {
+  position: relative;
+  z-index: 2;
+  transition: $transition-1;
+}
+
+@mixin curtain-hover($slide-direction) {
+  @if ($slide-direction == "left-to-right") {
+    width: 100%;
+  } @else if ($slide-direction == "top-to-bottom") {
+    height: 100%;
+  }
+}
+
+@mixin curtain-not-hover($slide-direction) {
+  @if ($slide-direction == "left-to-right") {
+    right: 0;
+    left: auto;
+  } @else if ($slide-direction == "top-to-bottom") {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@mixin slide-curtain-onhover($curtain-color: $color-foreground, $slide-direction: "left-to-right") {
+  @include curtain($curtain-color, $slide-direction);
+
+  > span {
+    @include below-curtain;
+  }
+
+  &:hover::before {
+    @include curtain-hover($slide-direction);
+  }
+
+  &:not(:hover)::before {
+    @include curtain-not-hover($slide-direction);
+  }
+}
+
+@mixin slide-child-curtain-onhover($prefix, $curtain-color: $color-foreground, $slide-direction: "left-to-right") {
+  .#{$prefix}-curtain {
+    @include curtain($curtain-color, $slide-direction);
+  }
+
+  .#{$prefix}-below-curtain {
+    @include below-curtain;
+  }
+
+  &:hover .#{$prefix}-curtain::before {
+    @include curtain-hover($slide-direction);
+  }
+
+  &:not(:hover) .#{$prefix}-curtain::before {
+    @include curtain-not-hover($slide-direction);
+  }
+}
+
+@mixin media-respond($breakpoint) {
+  @if $breakpoint == $bp-xs {
+    @media only screen and (max-width: (($bp-xs / 16) * 1em)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $bp-sm {
+    @media only screen and (max-width: (($bp-sm / 16) * 1em)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $bp-md {
+    @media only screen and (max-width: (($bp-md / 16) * 1em)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == $bp-lg {
+    @media only screen and (min-width: (($bp-lg / 16) * 1em)) {
+      @content;
+    }
+  }
+}

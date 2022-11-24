@@ -1,0 +1,41 @@
+.about-section {
+  @include section-content;
+}
+
+.about-section__text {
+  max-width: 35rem;
+  margin-inline: auto;
+  color: $color-text-secondary;
+  line-height: 1.7;
+
+  > :first-child {
+    margin-bottom: 1rem;
+  }
+}
+
+.about-section__info-item {
+  @include center-content;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.about-section__sub-heading {
+  margin-block: 2rem;
+  text-align: center;
+}
+
+.about-section__stacks {
+  @include center-content;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-section__technologies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 24rem));
+  justify-content: center;
+  row-gap: 2rem;
+  column-gap: 3rem;
+}

@@ -1,0 +1,36 @@
+.heading-container {
+  background-color: $color-primary-opaque-3;
+  padding-block: 2.5rem;
+  padding-inline: $section-padding-inline;
+
+  & > :first-child {
+    margin-inline: auto;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.heading-border {
+  position: relative;
+  width: $heading-border-width;
+  height: 0.25rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  margin-inline: auto;
+  border-radius: $radius-lg;
+  background-color: shade($color-primary, 50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0.5rem;
+    height: 100%;
+    border-radius: $radius-lg;
+    background-color: $color-primary;
+    animation-name: translate-x-start-end;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}

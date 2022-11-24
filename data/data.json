@@ -1,0 +1,75 @@
+{
+  "domain": "ahmdrzk.dev",
+  "email": "contact@ahmdrzk.dev",
+  "typing-intro-heading": ["Ahmed Rezk", "Full-Stack Web Developer"],
+  "intro-para": "I am a web developer from Egypt, passionate about building everything from beautiful small business websites to rich interactive web applications.",
+  "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge and proficiency in web technologies and tools, as well as strong skills in writing clean and efficient code.",
+  "about-info": {
+    "name": "Ahmed Rezk",
+    "from": "Egypt",
+    "Languages": "English, Arabic"
+  },
+  "social": {
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "facebook": "https://facebook.com"
+  },
+  "stacks": [
+    { "label": "Front-end Development", "percentage": "90%" },
+    { "label": "Back-end Development", "percentage": "75%" }
+  ],
+  "technologies": [
+    { "label": "JavaScript", "percentage": "80%" },
+    { "label": "TypeScript", "percentage": "70%" },
+    { "label": "HTML", "percentage": "95%" },
+    { "label": "CSS", "percentage": "95%" },
+    { "label": "C#", "percentage": "65%" },
+    { "label": "React", "percentage": "90%" },
+    { "label": "Next.js", "percentage": "85%" },
+    { "label": "Redux", "percentage": "80%" },
+    { "label": "Node.js", "percentage": "70%" },
+    { "label": "Express", "percentage": "80%" },
+    { "label": "Sass", "percentage": "90%" },
+    { "label": "Tailwind CSS", "percentage": "80%" },
+    { "label": "Chakra UI", "percentage": "80%" },
+    { "label": "MongoDB", "percentage": "70%" },
+    { "label": "Git", "percentage": "60%" },
+    { "label": "Webpack", "percentage": "60%" }
+  ],
+  "projects": [
+    {
+      "title": "Full-Stack Social Network",
+      "image": "/images/projects/react-social.webp",
+      "technologies": ["React", "CSS", "Node.js", "Express", "MongoDB"],
+      "repo": "https://github.com",
+      "host": "https://github.com"
+    },
+    {
+      "title": "Full-Stack Food Recipes Manager",
+      "image": "/images/projects/react-food-recipes.webp",
+      "technologies": ["React", "Redux", "Chakra UI", "Node.js", "Express", "MongoDB"],
+      "repo": "https://github.com",
+      "host": "https://github.com"
+    },
+    {
+      "title": "Frontend IT Agency",
+      "image": "/images/projects/sass-soft.webp",
+      "technologies": ["JavaScript", "HTML", "Sass"],
+      "repo": "https://github.com",
+      "host": "https://github.com"
+    },
+    {
+      "title": "REST API Hotel Booking Manager",
+      "image": "/images/projects/express-hotel.webp",
+      "technologies": ["Node.js", "Express", "MongoDB", "Stripe"],
+      "repo": "https://github.com"
+    },
+    {
+      "title": "AHMDRZK Website",
+      "image": "/images/projects/ahmdrzk.webp",
+      "technologies": ["Next.js", "TypeScript", "Sass"],
+      "repo": "https://github.com",
+      "host": "https://github.com"
+    }
+  ]
+}

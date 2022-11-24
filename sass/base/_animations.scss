@@ -1,0 +1,48 @@
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes shine-glass {
+  20% {
+    left: 120%;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translate-x-start-end {
+  from {
+    transform: translateX(-2rem);
+  }
+
+  to {
+    transform: translateX($heading-border-width * 2);
+  }
+}
+
+@keyframes bump {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}

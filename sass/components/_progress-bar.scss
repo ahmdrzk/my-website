@@ -1,0 +1,27 @@
+.progress-bar__text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+
+  & > span:nth-child(1) {
+    font-weight: 500;
+  }
+
+  & > span:nth-child(2) {
+    color: $color-primary;
+  }
+}
+
+.progress-bar__full {
+  height: 0.7rem;
+  border-radius: $radius-lg;
+  background-color: $color-primary-darker;
+}
+
+.progress-bar__current {
+  width: 1rem;
+  height: 100%;
+  border-radius: $radius-lg;
+  background-color: shade($color-primary, 15%);
+  transition: $transition-2;
+}

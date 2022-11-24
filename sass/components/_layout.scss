@@ -1,0 +1,60 @@
+.root {
+  overflow: hidden;
+  background-color: $color-background;
+}
+
+.header-content {
+  @include section-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-block: 1rem;
+}
+
+.logo {
+  flex: 1 1 auto;
+
+  a {
+    color: $color-primary;
+    line-height: 1;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  span {
+    color: $color-text-primary;
+  }
+
+  span:nth-child(2) {
+    font-size: $font-size-smaller;
+  }
+}
+
+.prevent-scroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+footer {
+  border-top: $border-1px;
+  background-color: $color-background-lighter;
+}
+
+.footer-content {
+  @include section-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-block: 1.5rem;
+  color: $color-text-secondary;
+  font-size: $font-size-sm;
+
+  a {
+    font-weight: 500;
+  }
+}

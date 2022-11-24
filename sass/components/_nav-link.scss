@@ -1,0 +1,15 @@
+.nav-link {
+  padding-block: 0.4rem;
+  color: $color-text-primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: $font-size-sm;
+  font-weight: 500;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include increasing-border-onhover;
+}
