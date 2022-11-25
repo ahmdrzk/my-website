@@ -12,8 +12,7 @@
   }
 
   &:hover .project-card__image {
-    filter: blur(4px);
-    transform: scale(1.06);
+    transform: scale(1.1);
   }
 
   @include slide-child-curtain-onhover("project-image", $color-primary-opaque-2, "top-to-bottom");
@@ -45,9 +44,6 @@
   transform: translateX(-50%);
   transition: $transition-1;
 
-  > div {
-  }
-
   a {
     @include center-content;
     width: 3.2rem;
@@ -61,7 +57,7 @@
       color: $color-text-dark;
     }
 
-    @include slide-curtain-onhover($color-primary);
+    @include slide-curtain-onhover;
   }
 }
 
