@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
 
 type CircularProgressBarProps = {
   label: string;
@@ -7,18 +8,21 @@ type CircularProgressBarProps = {
 
 const CircularProgressBar = ({ label, percentage }: CircularProgressBarProps) => {
   const [currentPercent, setCurrentPercent] = useState(0);
+  const { animatedElement, isInView } = useAnimateOnScroll<HTMLDivElement>("opacity");
 
   useEffect(() => {
-    if (currentPercent < percentage) {
-      setTimeout(() => {
-        setCurrentPercent((prevState) => prevState + 5);
-      }, 100);
+    if (isInView) {
+      if (currentPercent < percentage) {
+        setTimeout(() => {
+          setCurrentPercent((prevState) => prevState + 5);
+        }, 150);
+      }
     }
-  }, [currentPercent, percentage]);
+  }, [isInView, currentPercent, percentage]);
 
   return (
     <div className={`circular-progress-bar-${percentage}`}>
-      <div>
+      <div ref={animatedElement}>
         <div>
           <span>{currentPercent}%</span>
         </div>

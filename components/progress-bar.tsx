@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
 
 type ProgressBarProps = {
   label: string;
@@ -6,20 +7,21 @@ type ProgressBarProps = {
 };
 
 const ProgressBar = ({ label, percentage }: ProgressBarProps) => {
-  const currentBarElement = useRef<HTMLDivElement>(null!);
-
-  useEffect(() => {
-    currentBarElement.current.style.width = `${percentage}%`;
-  });
+  const percentBarElement = useRef<HTMLDivElement>(null!);
+  const { animatedElement, isInView } = useAnimateOnScroll<HTMLDivElement>("slide-up");
 
   return (
-    <div className="progress-bar">
+    <div ref={animatedElement} className="progress-bar">
       <div className="progress-bar__text">
         <span>{label}</span>
         <span>{percentage}%</span>
       </div>
       <div className="progress-bar__full">
-        <div ref={currentBarElement} className="progress-bar__current"></div>
+        <div
+          ref={percentBarElement}
+          style={isInView ? { width: `${percentage}%` } : {}}
+          className="progress-bar__current"
+        ></div>
       </div>
     </div>
   );

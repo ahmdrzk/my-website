@@ -1,6 +1,7 @@
 import SectionHeading from "./section-heading";
 import CircularProgressBar from "./circular-progress-bar";
 import ProgressBar from "./progress-bar";
+import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
 
 import data from "../data/data.json";
 
@@ -9,11 +10,13 @@ type AboutSectionProps = {
 };
 
 const AboutSection = ({ id }: AboutSectionProps) => {
+  const { animatedElement } = useAnimateOnScroll<HTMLDivElement>("slide-up");
+
   return (
     <section id={id}>
       <SectionHeading as="h2">About Me</SectionHeading>
 
-      <div className="about-section">
+      <div ref={animatedElement} className="about-section">
         <div className="about-section__text">
           <p>{data["about-para"]}</p>
 

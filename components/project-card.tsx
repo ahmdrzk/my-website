@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SiGithub } from "react-icons/si";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
 
 type ProjectCardProps = {
   title: string;
@@ -11,8 +12,10 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ title, image, technologies, repo, host }: ProjectCardProps) => {
+  const { animatedElement } = useAnimateOnScroll<HTMLElement>("slide-up");
+
   return (
-    <figure className="project-card">
+    <figure ref={animatedElement} className="project-card">
       <div className="project-card__image-container project-image-curtain">
         <Image src={image} alt={title} fill className="project-card__image" />
       </div>

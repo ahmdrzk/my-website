@@ -16,11 +16,6 @@
     border-radius: $radius-full;
     background: conic-gradient($color-primary #{$percentage * 3.6}deg, $color-primary-darker 0);
     padding: 0.6rem;
-    animation-name: opacity;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    transition: $transition-1;
 
     & > div {
       @include center-content;
