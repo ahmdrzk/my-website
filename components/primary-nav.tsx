@@ -35,9 +35,6 @@ const PrimaryNav = ({ isSideNavOpen, setIsSideNavOpen }: PrimaryNavProps) => {
           <NavLink href="#" onClick={comingSoonAlertHandler} toggleSideNav={toggleSideNav}>
             Blog
           </NavLink>
-          <NavLink href="#" onClick={comingSoonAlertHandler} toggleSideNav={toggleSideNav}>
-            Resources
-          </NavLink>
         </ul>
         <Button href="#contact">Contact Me</Button>
       </nav>
