@@ -1,13 +1,13 @@
 type NavLinkProps = {
   href: string;
   children: string;
-  toggleSideNav: () => void;
+  closeSideNav: () => void;
   onClick?: (event: React.MouseEvent) => void;
 };
 
-const NavLink = ({ href, children, toggleSideNav, onClick }: NavLinkProps) => {
+const NavLink = ({ href, children, closeSideNav, onClick }: NavLinkProps) => {
   const onClickHandler = (e: React.MouseEvent) => {
-    toggleSideNav();
+    closeSideNav();
     if (onClick) {
       onClick(e);
     }

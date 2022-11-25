@@ -11,6 +11,9 @@ const PrimaryNav = ({ isSideNavOpen, setIsSideNavOpen }: PrimaryNavProps) => {
   const toggleSideNav = () => {
     setIsSideNavOpen((prevState) => !prevState);
   };
+  const closeSideNav = () => {
+    setIsSideNavOpen(false);
+  };
 
   const comingSoonAlertHandler = () => {
     window.alert("This section is coming soon!");
@@ -23,16 +26,16 @@ const PrimaryNav = ({ isSideNavOpen, setIsSideNavOpen }: PrimaryNavProps) => {
       </button>
       <nav className={`nav ${isSideNavOpen ? "side-nav-open" : ""}`}>
         <ul>
-          <NavLink href="/" toggleSideNav={toggleSideNav}>
+          <NavLink href="#home" closeSideNav={closeSideNav}>
             Home
           </NavLink>
-          <NavLink href="#about" toggleSideNav={toggleSideNav}>
+          <NavLink href="#about" closeSideNav={closeSideNav}>
             About
           </NavLink>
-          <NavLink href="#portfolio" toggleSideNav={toggleSideNav}>
+          <NavLink href="#portfolio" closeSideNav={closeSideNav}>
             Portfolio
           </NavLink>
-          <NavLink href="#" onClick={comingSoonAlertHandler} toggleSideNav={toggleSideNav}>
+          <NavLink href="#" onClick={comingSoonAlertHandler} closeSideNav={closeSideNav}>
             Blog
           </NavLink>
         </ul>
