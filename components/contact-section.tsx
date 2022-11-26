@@ -46,6 +46,7 @@ const ContactSection = ({ id }: ContactSectionProps) => {
               autoComplete="off"
               spellCheck="false"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <div hidden>
                 <input name="bot-field" />
               </div>
