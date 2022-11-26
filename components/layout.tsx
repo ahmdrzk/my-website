@@ -19,7 +19,7 @@ const Layout = ({ className, children }: LayoutProps) => {
           <div className="logo">
             <Link href="/">
               AHMDRZK<span>.</span>
-              <span>DEV</span>
+              <span>COM</span>
             </Link>
           </div>
           <PrimaryNav isSideNavOpen={isSideNavOpen} setIsSideNavOpen={setIsSideNavOpen} />

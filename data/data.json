@@ -1,5 +1,5 @@
 {
-  "domain": "ahmdrzk.dev",
+  "domain": "ahmdrzk.com",
   "email": "ahmedrezk02@outlook.com",
   "typing-intro-heading": ["Ahmed Rezk", "Full-Stack Web Developer"],
   "intro-para": "I am a web developer from Egypt, passionate about building everything from beautiful small business websites to rich interactive web applications.",
@@ -69,7 +69,7 @@
       "image": "/images/projects/ahmdrzk.webp",
       "technologies": ["Next.js", "TypeScript", "Sass"],
       "repo": "https://github.com/ahmdrzk/my-website",
-      "host": "https://ahmdrzk.dev"
+      "host": "https://ahmdrzk.com"
     }
   ]
 }
