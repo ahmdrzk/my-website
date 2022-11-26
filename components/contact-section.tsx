@@ -52,19 +52,19 @@ const ContactSection = ({ id }: ContactSectionProps) => {
               </div>
               <div>
                 <label htmlFor="contact-name">Your Name</label>
-                <input type="text" id="contact-email" className="input" />
+                <input type="text" id="contact-name" name="name" className="input" />
               </div>
               <div>
                 <label htmlFor="contact-email">Your Email</label>
-                <input type="email" id="contact-email" className="input" />
+                <input type="email" id="contact-email" name="email" className="input" />
               </div>
               <div>
-                <label>Subject</label>
-                <input type="text" id="contact-subject" className="input" />
+                <label htmlFor="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" className="input" />
               </div>
               <div>
                 <label htmlFor="contact-message">Message</label>
-                <textarea id="contact-message" className="input"></textarea>
+                <textarea id="contact-message" name="message" className="input"></textarea>
               </div>
               <Button>Submit Message</Button>
             </form>
