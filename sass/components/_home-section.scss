@@ -8,6 +8,7 @@
 
 .home-section-overlay {
   @include center-content;
+  justify-content: flex-start;
   flex-direction: column;
   min-height: 90vh;
   background-color: $color-background-opaque;
@@ -19,11 +20,14 @@
   flex-direction: column;
   row-gap: 1.5rem;
   max-width: $section-inner-max-width;
+  margin-top: 2.5vw;
   padding-top: calc(10vh - 1rem);
   text-align: center;
 }
 
 .home-section__heading {
+  margin-bottom: 0.5rem;
+
   .typing-text,
   .typing-cursor {
     color: $color-primary;
@@ -38,6 +42,7 @@
 }
 
 .home-section__summary-text {
+  margin-bottom: 1rem;
   color: $color-text-secondary;
 }
 
@@ -49,7 +54,7 @@
 .scroll-down-button {
   @include center-content;
   flex-direction: column;
-  margin-top: auto;
+  margin-top: 1vw;
   margin-bottom: 2rem;
   color: $color-text-secondary;
   text-decoration: none;
