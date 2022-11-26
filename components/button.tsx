@@ -8,7 +8,7 @@ type ButtonAsLinkProps = childrenProp & {
 };
 
 type ButtonAsButtonProps = childrenProp & {
-  onClick: (event: React.MouseEvent) => void;
+  onClick?: (event: React.MouseEvent) => void;
   href?: never;
 };
 

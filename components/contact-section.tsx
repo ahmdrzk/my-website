@@ -37,7 +37,18 @@ const ContactSection = ({ id }: ContactSectionProps) => {
               </span>
               <h5>Drop Me a Message</h5>
             </div>
-            <form autoComplete="off" spellCheck="false">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-field"
+              autoComplete="off"
+              spellCheck="false"
+            >
+              <div hidden>
+                <input name="bot-field" />
+              </div>
               <div>
                 <label htmlFor="contact-name">Your Name</label>
                 <input type="text" id="contact-email" className="input" />
@@ -54,9 +65,9 @@ const ContactSection = ({ id }: ContactSectionProps) => {
                 <label htmlFor="contact-message">Message</label>
                 <textarea id="contact-message" className="input"></textarea>
               </div>
-              <Button onClick={() => console.log("Send")}>Submit Message</Button>
+              <div data-netlify-recaptcha="true"></div>
+              <Button>Submit Message</Button>
             </form>
-            {/* Thank you for your message, I will be in touch very shortly. */}
           </div>
         </div>
       </div>
