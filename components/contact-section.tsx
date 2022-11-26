@@ -42,7 +42,6 @@ const ContactSection = ({ id }: ContactSectionProps) => {
               name="contact"
               method="POST"
               data-netlify="true"
-              data-netlify-recaptcha="true"
               netlify-honeypot="bot-field"
               autoComplete="off"
               spellCheck="false"
@@ -66,7 +65,6 @@ const ContactSection = ({ id }: ContactSectionProps) => {
                 <label htmlFor="contact-message">Message</label>
                 <textarea id="contact-message" className="input"></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <Button>Submit Message</Button>
             </form>
           </div>
