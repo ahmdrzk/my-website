@@ -1,6 +1,6 @@
 {
   "domain": "ahmdrzk.dev",
-  "email": "contact@ahmdrzk.dev",
+  "email": "ahmedrezk02@outlook.com",
   "typing-intro-heading": ["Ahmed Rezk", "Full-Stack Web Developer"],
   "intro-para": "I am a web developer from Egypt, passionate about building everything from beautiful small business websites to rich interactive web applications.",
   "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge and proficiency in web technologies and tools, as well as strong skills in writing clean and efficient code.",
@@ -10,8 +10,8 @@
     "Languages": "English, Arabic"
   },
   "social": {
-    "github": "https://github.com",
-    "linkedin": "https://linkedin.com",
+    "github": "https://github.com/ahmdrzk",
+    "linkedin": "https://linkedin.com/in/ahmedin20",
     "facebook": "https://facebook.com"
   },
   "stacks": [
@@ -41,35 +41,35 @@
       "title": "Full-Stack Social Network",
       "image": "/images/projects/react-social.webp",
       "technologies": ["React", "CSS", "Node.js", "Express", "MongoDB"],
-      "repo": "https://github.com",
-      "host": "https://github.com"
+      "repo": "https://github.com/ahmdrzk/react-social",
+      "host": "https://react-social-1.netlify.app"
     },
     {
       "title": "Full-Stack Food Recipes Manager",
       "image": "/images/projects/react-food-recipes.webp",
       "technologies": ["React", "Redux", "Chakra UI", "Node.js", "Express", "MongoDB"],
-      "repo": "https://github.com",
-      "host": "https://github.com"
+      "repo": "https://github.com/ahmdrzk/react-food-recipes",
+      "host": "https://react-food-recipes-1.netlify.app"
     },
     {
       "title": "Frontend IT Agency",
       "image": "/images/projects/sass-soft.webp",
       "technologies": ["JavaScript", "HTML", "Sass"],
-      "repo": "https://github.com",
-      "host": "https://github.com"
+      "repo": "https://github.com/ahmdrzk/sass-soft",
+      "host": "https://sass-soft.netlify.app"
     },
     {
       "title": "REST API Hotel Booking Manager",
       "image": "/images/projects/express-hotel.webp",
       "technologies": ["Node.js", "Express", "MongoDB", "Stripe"],
-      "repo": "https://github.com"
+      "repo": "https://github.com/ahmdrzk/express-hotel"
     },
     {
       "title": "AHMDRZK Website",
       "image": "/images/projects/ahmdrzk.webp",
       "technologies": ["Next.js", "TypeScript", "Sass"],
-      "repo": "https://github.com",
-      "host": "https://github.com"
+      "repo": "https://github.com/ahmdrzk/my-website",
+      "host": "https://ahmdrzk.dev"
     }
   ]
 }
