@@ -10,7 +10,7 @@ $color-primary-opaque-3: change-color($color-primary, $alpha: 0.05);
 
 $color-background: hsl(224, 64%, 10%);
 $color-background-lighter: tint($color-background, 5%);
-$color-background-opaque: change-color($color-background, $alpha: 0.9);
+$color-background-opaque: change-color($color-background, $alpha: 0.8);
 
 $color-foreground: $WHITE;
 

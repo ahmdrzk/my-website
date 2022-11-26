@@ -39,7 +39,9 @@ const PrimaryNav = ({ isSideNavOpen, setIsSideNavOpen }: PrimaryNavProps) => {
             Blog
           </NavLink>
         </ul>
-        <Button href="#contact">Contact Me</Button>
+        <Button href="#contact" closeSideNav={closeSideNav}>
+          Contact Me
+        </Button>
       </nav>
     </>
   );

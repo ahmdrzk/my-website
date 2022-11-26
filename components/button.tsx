@@ -4,20 +4,22 @@ type childrenProp = {
 
 type ButtonAsLinkProps = childrenProp & {
   href: string;
+  closeSideNav?: () => void;
   onClick?: never;
 };
 
 type ButtonAsButtonProps = childrenProp & {
   onClick?: (event: React.MouseEvent) => void;
   href?: never;
+  closeSideNav?: never;
 };
 
 type ButtonProps = ButtonAsLinkProps | ButtonAsButtonProps;
 
-const Button = ({ children, href, onClick }: ButtonProps) => {
+const Button = ({ children, href, onClick, closeSideNav }: ButtonProps) => {
   if (href) {
     return (
-      <a href={href} className="button">
+      <a href={href} onClick={closeSideNav} className="button">
         <span>{children}</span>
       </a>
     );
