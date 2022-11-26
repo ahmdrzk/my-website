@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
-import profileImg from "../public/images/profile-img.jpg";
+import profileImg from "../public/images/profile-img.webp";
 
 const Avatar = () => {
   const { animatedElement } = useAnimateOnScroll<HTMLDivElement>("slide-right");
