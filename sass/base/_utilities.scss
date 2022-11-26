@@ -1,6 +1,6 @@
 .slide-up-transition {
   opacity: 0;
-  transform: translateY(2.5rem);
+  transform: translateY(5rem);
 }
 .slide-up-transition-inview {
   opacity: 1;
@@ -10,7 +10,7 @@
 
 .slide-right-transition {
   opacity: 0;
-  transform: translateX(-2.5rem);
+  transform: translateX(-5rem);
 }
 .slide-right-transition-inview {
   opacity: 1;
@@ -20,7 +20,7 @@
 
 .slide-left-transition {
   opacity: 0;
-  transform: translateX(2.5rem);
+  transform: translateX(5rem);
 }
 .slide-left-transition-inview {
   opacity: 1;

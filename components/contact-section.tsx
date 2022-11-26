@@ -10,14 +10,15 @@ type ContactSectionProps = {
 };
 
 const ContactSection = ({ id }: ContactSectionProps) => {
-  const { animatedElement } = useAnimateOnScroll<HTMLDivElement>("slide-up");
+  const { animatedElement: animatedElement1 } = useAnimateOnScroll<HTMLDivElement>("slide-up");
+  const { animatedElement: animatedElement2 } = useAnimateOnScroll<HTMLDivElement>("slide-up");
 
   return (
     <section id={id} className="contact-section-bg">
       <div className="contact-section-overlay">
         <SectionHeading as="h2">Contact Me</SectionHeading>
-        <div ref={animatedElement} className="contact-section">
-          <div className="contact-card">
+        <div className="contact-section">
+          <div ref={animatedElement1} className="contact-card">
             <div className="contact-type-label">
               <span className="contact-icon">
                 <MdOutlineAlternateEmail />
@@ -30,7 +31,7 @@ const ContactSection = ({ id }: ContactSectionProps) => {
               </div>
             </div>
           </div>
-          <div className="contact-card">
+          <div ref={animatedElement2} className="contact-card">
             <div className="contact-type-label">
               <span className="contact-icon">
                 <MdOutlineMarkEmailRead />
