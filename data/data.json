@@ -3,7 +3,7 @@
   "email": "ahmedrezk02@outlook.com",
   "typing-intro-heading": ["Ahmed Rezk", "Full-Stack Web Developer"],
   "intro-para": "I am a web developer from Egypt, passionate about building everything from beautiful small business websites to rich interactive web applications.",
-  "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge and proficiency in web technologies and tools, as well as strong skills in writing clean and efficient code.",
+  "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge and proficiency in web technologies and tools, as well as strong skills in writing clean and efficient code.\nI love new challenges that help me invest all my skills and experience, and I am always enthusiastic to learn new technologies.",
   "about-info": {
     "name": "Ahmed Rezk",
     "from": "Egypt",
@@ -27,11 +27,13 @@
     { "label": "React", "percentage": "90%" },
     { "label": "Next.js", "percentage": "85%" },
     { "label": "Redux", "percentage": "80%" },
+    { "label": "React Query", "percentage": "65%" },
     { "label": "Node.js", "percentage": "70%" },
     { "label": "Express", "percentage": "80%" },
     { "label": "Sass", "percentage": "90%" },
     { "label": "Tailwind CSS", "percentage": "80%" },
     { "label": "Chakra UI", "percentage": "80%" },
+    { "label": "Material UI", "percentage": "70%" },
     { "label": "MongoDB", "percentage": "70%" },
     { "label": "Git", "percentage": "60%" },
     { "label": "Webpack", "percentage": "60%" }
