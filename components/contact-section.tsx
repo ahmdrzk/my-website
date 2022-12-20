@@ -3,14 +3,14 @@ import SectionHeading from "./section-heading";
 import Button from "./button";
 import useAnimateOnScroll from "../hooks/useAnimateOnScroll";
 
-import data from "../data/data.json";
+// import data from "../data/data.json";
 
 type ContactSectionProps = {
   id: string;
 };
 
 const ContactSection = ({ id }: ContactSectionProps) => {
-  const { animatedElement: animatedElement1 } = useAnimateOnScroll<HTMLDivElement>("slide-up");
+  // const { animatedElement: animatedElement1 } = useAnimateOnScroll<HTMLDivElement>("slide-up");
   const { animatedElement: animatedElement2 } = useAnimateOnScroll<HTMLDivElement>("slide-up");
 
   return (
@@ -18,7 +18,7 @@ const ContactSection = ({ id }: ContactSectionProps) => {
       <div className="contact-section-overlay">
         <SectionHeading as="h2">Contact Me</SectionHeading>
         <div className="contact-section">
-          <div ref={animatedElement1} className="contact-card">
+          {/* <div ref={animatedElement1} className="contact-card">
             <div className="contact-type-label">
               <span className="contact-icon">
                 <MdOutlineAlternateEmail />
@@ -30,7 +30,7 @@ const ContactSection = ({ id }: ContactSectionProps) => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
           <div ref={animatedElement2} className="contact-card">
             <div className="contact-type-label">
               <span className="contact-icon">
