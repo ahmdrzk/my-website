@@ -29,7 +29,7 @@ const Layout = ({ className, children }: LayoutProps) => {
       <footer>
         <div className="footer-content">
           <p>
-            © 2022 <a href={`https://${data.domain}`}>{data.domain}</a>. All rights reserved.
+            © 2023 <a href={`https://${data.domain}`}>{data.domain}</a>. All rights reserved.
           </p>
           <p>
             Background images{" "}

@@ -2,11 +2,11 @@
   "domain": "ahmdrzk.com",
   "typing-intro-heading": ["Ahmed Rezk", "Full-Stack Web Developer"],
   "intro-para": "I am a web developer from Egypt, passionate about building everything from beautiful small business websites to rich interactive web applications.",
-  "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge and proficiency in web technologies and tools, as well as strong skills in writing clean and efficient code.\nI love new challenges that help me invest all my skills and experience, and I am always enthusiastic to learn new technologies.",
+  "about-para": "I am a self-motivated and ambitious Web Developer with solid knowledge, proficiency in web technologies and tools, and strong skills in writing clean and efficient code.\nI love new challenges that help me invest all my skills and experience, and I am always enthusiastic about learning new technologies.",
   "about-info": {
     "name": "Ahmed Rezk",
     "from": "Egypt",
-    "Languages": "English, Arabic"
+    "languages": "English, Arabic"
   },
   "social": {
     "github": "https://github.com/ahmdrzk",
@@ -15,7 +15,7 @@
   },
   "stacks": [
     { "label": "Front-end Development", "percentage": "90%" },
-    { "label": "Back-end Development", "percentage": "75%" }
+    { "label": "Back-end Development", "percentage": "80%" }
   ],
   "technologies": [
     { "label": "JavaScript", "percentage": "80%" },
@@ -46,7 +46,7 @@
       "host": "https://react-social-1.netlify.app"
     },
     {
-      "title": "Full-Stack Food Recipes Manager",
+      "title": "Full-Stack Food Recipes",
       "image": "/images/projects/react-food-recipes.webp",
       "technologies": ["React", "Redux", "Chakra UI", "Node.js", "Express", "MongoDB"],
       "repo": "https://github.com/ahmdrzk/react-food-recipes",
